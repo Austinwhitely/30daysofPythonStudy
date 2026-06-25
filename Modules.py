@@ -4,12 +4,7 @@ import string
 characters: str = string.ascii_letters + string.digits
 empty_array: list = {}
 
-#type: str = input('enter color type: ')
-#num: int = int(input('enter number of colors: '))
 
-#generate_colors(type, num)
-#rgb_color_gen()
-#random_user_id()
 
 def random_user_id():
 
@@ -17,7 +12,7 @@ def random_user_id():
     num: int = int(input('enter number of user ids: '))
  
     for number in range(num): 
-         return ''.join(choice(characters) for _ in range(len))
+          print(''.join(choice(characters) for _ in range(len)))
     
 
 def rgb_color_gen():
@@ -25,7 +20,7 @@ def rgb_color_gen():
     color1: int = randint(0, 255)
     color2: int = randint(0, 255)
     rgb: tuple = (color, color1, color2)
-    print('rgb{rgb}')
+    print(rgb + "/n")
 
 def generate_colors(type: str, num: int):
     
@@ -46,5 +41,12 @@ def shuffle_list(array: list):
        array: list = [randint(0,9) for i in range(7)]
        return array
 
-print(shuffle_list(empty_array))
+def main():
+     type: str = input('enter color type: ')
+     num: int = int(input('enter number of colors: '))
+
+     generate_colors(type, num)
+     rgb_color_gen()
+     random_user_id()
+     print(shuffle_list(empty_array))
      
