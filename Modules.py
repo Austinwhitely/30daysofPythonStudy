@@ -2,7 +2,7 @@ from random import *
 import string
 
 characters: str = string.ascii_letters + string.digits
-empty_array: list = {}
+empty_array: dict = {}
 
 
 
@@ -20,7 +20,7 @@ def rgb_color_gen():
     color1: int = randint(0, 255)
     color2: int = randint(0, 255)
     rgb: tuple = (color, color1, color2)
-    print(rgb + "/n")
+    print(rgb)
 
 def generate_colors(type: str, num: int):
     
@@ -37,9 +37,9 @@ def generate_colors(type: str, num: int):
              print("#{} " .format(*hex))        
              
              
-def shuffle_list(array: list):
-       array: list = [randint(0,9) for i in range(7)]
-       return array
+def shuffle_list(array):
+       rand_array: list = [randint(0,9) for i in range(7)]
+       return rand_array
 
 def main():
      type: str = input('enter color type: ')
