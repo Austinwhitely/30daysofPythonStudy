@@ -31,7 +31,7 @@ for row in column_data[1:]:
 
 print(df)
 df.to_csv(
-    "C:/Users/austi/Documents/GitHub/30daysofPython/files/Outputs/Companies_data",
+    "C:/Users/austi/Documents/GitHub/30daysofPython/files/Outputs/Companies_data.csv",
     index=False,
 )
 # %%
