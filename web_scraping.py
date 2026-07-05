@@ -3,7 +3,6 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 import json
-import re
 import io
 
 headers = {"User-Agent": "MyScraperName / 1.0(austinwhitely2 @ gmail.com)"}
